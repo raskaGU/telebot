@@ -15,7 +15,7 @@ def start(message):
 
 @bot.message_handler(func=lambda message: message.text.lower() == "рандомный напиток")
 def random_drink(message):
-    drinks = ["Вода", "Кола", "Сок апельсиновый", "Фанта", "Чай"]
+    drinks = ["Кола", "Кола", "Сок апельсиновый", "Фанта", "Чай"]
     random_drink = random.choice(drinks)
     bot.send_message(message.chat.id, f"Рандомный напиток: {random_drink}")
 
